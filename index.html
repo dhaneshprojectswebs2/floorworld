@@ -106,7 +106,7 @@
             </div>
         </section>
 
-    <section id="contact" class="contact-section">
+   <section id="contact" class="contact-section">
     <div class="container">
         <h2>Contact Us</h2>
         <p class="section-intro">Have a question or want to place an order? Send us a message, and we'll get back to you shortly.</p>
@@ -115,16 +115,19 @@
             <input type="hidden" name="_to" value="info@floor-world.com">
             
             <input type="text" name="name" placeholder="Your Name" required>
-            
             <input type="email" name="email" placeholder="Your Email" required>
-            
             <input type="tel" name="phone" placeholder="Your Phone Number">
-            
             <input type="text" name="subject" placeholder="Subject" required>
-            
             <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
             
-            <button type="submit" class="btn">Send Inquiry</button>
+            <div class="captcha-container">
+                <label for="captcha-input">
+                    Please solve: <span id="captcha-question"></span>
+                </label>
+                <input type="text" id="captcha-input" placeholder="Your Answer" required>
+                <p id="captcha-error" class="error-message"></p>
+            </div>
+            <button type="submit" id="submit-button" class="btn" disabled>Send Inquiry</button>
         </form>
     </div>
 </section>
