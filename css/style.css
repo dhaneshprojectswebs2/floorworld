@@ -344,3 +344,18 @@ section h2 {
 
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
+    .captcha-container {
+    padding: 10px 0;
+}
+
+#captcha-question {
+    font-weight: bold;
+    color: #333; /* Or your form's text color */
+}
+
+#captcha-error {
+    color: #d9534f; /* A red color for errors */
+    font-size: 0.9em;
+    margin-top: 5px;
+    height: 1.2em; /* Keep space for the error message */
+}
